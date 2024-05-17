@@ -4,7 +4,8 @@ __pycache__/
 *$py.class
 
 # Large scale resources
-/training_results
+train_dir/
+cache/
 
 # C extensions
 *.so

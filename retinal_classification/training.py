@@ -242,9 +242,8 @@ def save_results(
     results_folder: str,
     recon_weight: float,
 ) -> None:
-    os.makedirs(results_folder, exist_ok=True)
-
     results_folder = os.path.join(results_folder, f"lambda_{recon_weight}")
+    os.makedirs(results_folder, exist_ok=True)
 
     # Save histories as a single JSON file
     histories_file_path = os.path.join(results_folder, "histories.json")
